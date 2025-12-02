@@ -1,5 +1,112 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme {
+  /* Font - Font Size */
+  --font-sfpro: 'SF Pro', sans-serif;
+
+  --text-display-3xl: 3.75rem;
+  --text-display-3xl--line-height: 4.5rem;
+
+  --text-display-2xl: 3rem;
+  --text-display-2xl-line-height: 3.75rem;
+
+  --text-display-xl: 2.5rem;
+  --text-display-xl-line-height: 3rem;
+
+  --text-display-lg: 2.25rem;
+  --text-display-lg-line-height: 3rem;
+
+  --text-display-md: 2rem;
+  --text-display-md-line-height: 2.5rem;
+
+  --text-display-sm: 1.75rem;
+  --text-display-sm-line-height: 2.375rem;
+
+  --text-display-xs: 1.5rem;
+  --text-display-xs-line-height: 2.25rem;
+
+  --text-xl: 1.25rem;
+  --text-xl-line-height: 2.125rem;
+
+  --text-lg: 1.125rem;
+  --text-lg-line-height: 2rem;
+
+  --text-md: 1rem;
+  --text-md-line-height: 1.875rem;
+
+  --text-sm: 0.875rem;
+  --text-sm-line-height: 1.75rem;
+
+  --text-xs: 0.75rem;
+  --text-xs-line-height: 1.5rem;
+
+  /* Color */
+  --color-neutral-25: #fdfdfd;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e9eaeb;
+  --color-neutral-300: #d5d7da;
+  --color-neutral-400: #a4a7ae;
+  --color-neutral-500: #717680;
+  --color-neutral-600: #535862;
+  --color-neutral-700: #414651;
+  --color-neutral-800: #252b37;
+  --color-neutral-900: #181d27;
+  --color-neutral-950: #0a0d12;
+
+  --color-primary-100: #f6f9fe;
+  --color-primary-200: #7f51f9;
+  --color-primary-300: #6936f2;
+
+  --color-accent-red: #d9206e;
+  --color-accent-green: #079455;
+  --color-accent-yellow: #fdb022;
+
+  /* Radius */
+  --radius-xxs: 0.125rem;
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.25rem;
+  --radius-4xl: 1.5rem;
+
+  /* Spacing */
+  --spacing-xxs: 0.125rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.375rem;
+  --spacing-md: 0.5rem;
+  --spacing-lg: 0.75rem;
+  --spacing-xl: 1rem;
+  --spacing-2xl: 1.25rem;
+  --spacing-3xl: 1.5rem;
+  --spacing-4xl: 2rem;
+  --spacing-5xl: 2.5rem;
+  --spacing-6xl: 3rem;
+  --spacing-7xl: 4rem;
+  --spacing-8xl: 5rem;
+  --spacing-9xl: 6rem;
+  --spacing-10xl: 8rem;
+  --spacing-11xl: 8.75rem;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'SF Pro';
+    src: url('../public/fonts/SFPro.woff2') format('woff2'),
+      url('../public/fonts/SFPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    @apply bg-black font-sfpro text-base text-neutral-25;
+  }
+}
 
 /* @custom-variant dark (&:is(.dark *));
 
